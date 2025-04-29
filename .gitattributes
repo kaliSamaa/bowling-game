@@ -1,0 +1,31 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Force Unix (LF) line endings for source files
+*.js     text eol=lf
+*.ts     text eol=lf
+*.jsx    text eol=lf
+*.tsx    text eol=lf
+*.css    text eol=lf
+*.scss   text eol=lf
+*.html   text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.sh     text eol=lf
+*.py     text eol=lf
+
+# Force Windows (CRLF) line endings for Windows-only files (if any)
+*.bat    text eol=crlf
+*.ps1    text eol=crlf
+
+# Binary files - prevent Git from changing line endings
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary
+*.zip    binary
+*.exe    binary

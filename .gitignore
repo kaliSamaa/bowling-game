@@ -1,0 +1,26 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# Uncomment if you have custom project settings
+# ProjectSettings/
+
+# Visual Studio
+.vs/
+*.csproj
+*.sln
+*.user
+*.suo
+*.tmp
+*.pdb
+*.booproj
+*.svd
+
+# OS-specific
+.DS_Store
+Thumbs.db
