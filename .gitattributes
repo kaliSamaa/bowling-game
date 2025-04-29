@@ -1,37 +1,45 @@
-# Set default behavior to automatically normalize line endings
+# Force C# language display on GitHub instead of ShaderLab
+*.shader linguist-language=C#
+*.cginc linguist-language=C#
+*.hlsl linguist-language=C#
+*.compute linguist-language=C#
+
+# Treat large generated Unity folders as vendored (ignored by GitHub stats)
+[Ll]ibrary/** linguist-vendored
+[Tt]emp/** linguist-vendored
+[Oo]bj/** linguist-vendored
+[Bb]uild/** linguist-vendored
+[Bb]uilds/** linguist-vendored
+[Ll]ogs/** linguist-vendored
+UserSettings/** linguist-vendored
+MemoryCaptures/** linguist-vendored
+
+# Normalize text files (cross-platform)
 * text=auto
-# Force Unix (LF) line endings for source files
-*.js     text eol=lf
-*.ts     text eol=lf
-*.jsx    text eol=lf
-*.tsx    text eol=lf
-*.css    text eol=lf
-*.scss   text eol=lf
-*.html   text eol=lf
-*.json   text eol=lf
-*.md     text eol=lf
-*.yml    text eol=lf
-*.yaml   text eol=lf
-*.sh     text eol=lf
-*.py     text eol=lf
-# Force Windows (CRLF) line endings for Windows-only files (if any)
-*.bat    text eol=crlf
-*.ps1    text eol=crlf
-# Binary files - prevent Git from changing line endings
-*.png filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg   binary
-*.gif    binary
-*.ico    binary
-*.pdf    binary
-*.zip    binary
-*.exe    binary
-*.anim filter=lfs diff=lfs merge=lfs -text
-*.prefab filter=lfs diff=lfs merge=lfs -text
-*.unity filter=lfs diff=lfs merge=lfs -text
-*.wav filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
-*.mat filter=lfs diff=lfs merge=lfs -text
-*.psd filter=lfs diff=lfs merge=lfs -text
-*.fbx filter=lfs diff=lfs merge=lfs -text
+*.cs text eol=lf
+*.shader text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+
+# Binary files (no end-of-line conversions)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.psd binary
+*.mp3 binary
+*.ogg binary
+*.wav binary
+*.dll binary
+*.exe binary
+*.fbx binary
+*.prefab binary
+*.unity binary
+*.anim binary
+*.controller binary
+
+# Unity-specific files treated as binary
+*.asset binary
+*.mat binary
+*.physicMaterial binary
+*.renderTexture binary
+*.lighting binary
